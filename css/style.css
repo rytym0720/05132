@@ -27,8 +27,8 @@ margin-top: 0;
 
 .topword{
   font-size: 15px;
-  max-width: 599px;
   color:darkgrey;
+  max-width: auto;
 margin: 0 auto;
 padding: 0 4%;
 margin-top: 15px;
@@ -88,7 +88,7 @@ right: 15px;
 .menu li a{
   display: block;
   padding: 5px;
-  color: #000000;
+  color: gray;
   font-size: 14px;
   text-decoration: none;
 }
@@ -203,9 +203,9 @@ h3{
   }
 
   .grids{
-    /* display: grid; */
+    display: grid;
    gap: 26px;
-   grid-template-columns: repeat(auto-fit,minmax(240px,0fr));
+   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
       margin-top: 6%;
    margin-bottom: 50px;
    text-align: center;
@@ -295,7 +295,7 @@ label{
   font-size: 1.125rem;
   margin-bottom: 10px;
   display: block;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 input[type="text"],
@@ -306,7 +306,7 @@ textarea{
   border-radius: 5px;
   padding: 10px;
   font-size: 1rem;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 input[type="text"],
@@ -344,19 +344,18 @@ footer{
   height: 100px;
   text-align: center;
   margin-top: 50px;
- 
+  color: #fff;
 }
 
 footer p{
   padding-top: 40px;
-  color: #fff;
 }
 
 } 
 
 
 /* #######600px以上〜767px######### */
-  @media(min-width:600px)and(max-width:767px){
+@media(min-width:600px){
 
 #wrapper{
   width: 100%;
@@ -433,7 +432,7 @@ right: 15px;
 .menu li a{
   display: block;
   padding: 5px;
-  color: #000000;
+  color: gray;
   font-size: 14px;
   text-decoration: none;
 }
@@ -473,7 +472,7 @@ font-weight: 100;
 /* アバウト */
 
 .grim{
-  display: grid;
+  /* display: grid; */
  gap:20px;
  margin-top: 0%;
  margin-bottom: 0%;
@@ -550,7 +549,7 @@ h3{
   .grids{
     /* display: grid; */
    gap:10px;
-   grid-template-columns: repeat(auto-fit,minmax(240px,0fr));
+   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
    margin-top: 0%;
    margin-bottom: 0%;
    text-align: center;
@@ -608,9 +607,9 @@ width: 300px;
 }
 
 .grided{
-  display: grid;
+  /* display: grid; */
  gap:20px;
- grid-template-columns: repeat(auto-fit,minmax(240px,0fr));
+ grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
  margin-top: 0%;
  margin-bottom: 0%;
  text-align: center;
@@ -698,9 +697,10 @@ footer p{
  
 }  
 
-/* #######768px以上######### */
-@media(min-width:768px)and(max-width:1189px){
 
+
+/* #######768px以上######### */
+@media(min-width:768px){
  
 #wrapper{
   width: 100%;
@@ -777,7 +777,7 @@ right: 15px;
 .menu li a{
   display: block;
   padding: 5px;
-  color: #000000;
+  color: gray;
   font-size: 14px;
   text-decoration: none;
 }
@@ -1040,6 +1040,9 @@ footer p{
   padding-top: 40px;
   color: #fff;
 }
+
+} */
+
 
 
 /* #######1190px以上######### */
@@ -1379,12 +1382,13 @@ footer{
   height: 100px;
   text-align: center;
   margin-top: 50px;
+  color: #fff;
  
 }
 
 footer p{
   padding-top: 40px;
-  color: #fff;
+  
 }
 
 }
